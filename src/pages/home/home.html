@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Alimentador Inteligente
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-list>
+      <button ion-item (click)="pagina_alimento()" [disabled]="!conectado">
+        <ion-icon  name="pizza" item-start></ion-icon>
+        Alimento
+      </button>
+
+      <button ion-item (click)="pagina_agua()" [disabled]="!conectado">
+        <ion-icon  name="water" item-start></ion-icon>
+        Agua
+      </button>
+
+      <button ion-item (click)="pagina_configuracion()" [disabled]="!conectado">
+        <ion-icon  name="cog" item-start></ion-icon>
+        Configuración
+      </button>
+
+      <button ion-item (click)="pagina_dispositivos()" >
+        <ion-icon  name="bluetooth" item-start></ion-icon>
+        Dispositivos
+      </button>
+
+    </ion-list>
+  </ion-card>
+
+  <hr>
+
+  <button ion-button block (click)="surtir_alimento" [disabled]="!conectado">
+    Surtir alimento
+  </button>
+
+</ion-content>

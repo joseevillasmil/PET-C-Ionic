@@ -1,0 +1,7 @@
+{
+  "name": "pet-c",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

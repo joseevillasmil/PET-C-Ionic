@@ -1,0 +1,119 @@
+<!--
+  Generated template for the ComidaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Programar alimento</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row>
+    <ion-col col-4>
+      <ion-label>Hora 1</ion-label>
+    </ion-col>
+    <ion-col col-4>
+      <ion-datetime #hora1 displayFormat="HH:mm" [(ngModel)]="hora_1" ></ion-datetime>
+    </ion-col>
+    <ion-col col-4>
+      <button (click)="hora1.open()" ion-button color="primary">
+        <ion-icon name="time"></ion-icon>
+      </button>
+      <button (click)="limpiar(1)" ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+
+    </ion-col>
+  </ion-row>
+  <hr>
+
+  <ion-row>
+    <ion-col col-4>
+      <ion-label>Hora 2</ion-label>
+    </ion-col>
+    <ion-col col-4>
+      <ion-datetime #hora2 displayFormat="HH:mm" [(ngModel)]="hora_2" ></ion-datetime>
+    </ion-col>
+    <ion-col col-4>
+      <button (click)="hora2.open()" ion-button color="primary">
+        <ion-icon name="time"></ion-icon>
+      </button>
+      <button (click)="limpiar(2)" ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+
+    </ion-col>
+  </ion-row>
+  <hr>
+
+  <ion-row>
+    <ion-col col-4>
+      <ion-label>Hora 3</ion-label>
+    </ion-col>
+    <ion-col col-4>
+      <ion-datetime #hora3 displayFormat="HH:mm" [(ngModel)]="hora_3" ></ion-datetime>
+    </ion-col>
+    <ion-col col-4>
+      <button (click)="hora3.open()" ion-button color="primary">
+        <ion-icon name="time"></ion-icon>
+      </button>
+      <button (click)="limpiar(3)" ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+
+    </ion-col>
+  </ion-row>
+  <hr>
+
+  <ion-row>
+    <ion-col col-4>
+      <ion-label>Hora 4</ion-label>
+    </ion-col>
+    <ion-col col-4>
+      <ion-datetime #hora4 displayFormat="HH:mm" [(ngModel)]="hora_4" ></ion-datetime>
+    </ion-col>
+    <ion-col col-4>
+      <button (click)="hora4.open()" ion-button color="primary">
+        <ion-icon name="time"></ion-icon>
+      </button>
+      <button (click)="limpiar(4)" ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+
+    </ion-col>
+  </ion-row>
+  <hr>
+
+  <ion-row>
+    <ion-col col-4>
+      <ion-label>Hora 5</ion-label>
+    </ion-col>
+    <ion-col col-4>
+      <ion-datetime #hora5 displayFormat="HH:mm" [(ngModel)]="hora_5" ></ion-datetime>
+    </ion-col>
+    <ion-col col-4>
+
+      <button (click)="hora5.open()" ion-button color="primary">
+        <ion-icon name="time"></ion-icon>
+      </button>
+      <button (click)="limpiar(5)" ion-button color="danger">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-col>
+  </ion-row>
+  <hr>
+
+
+  <hr>
+
+  <button ion-button block (click)="guardar()">
+    <ion-icon name="ios-checkmark-circle"></ion-icon>   Guardar
+  </button>
+
+</ion-content>
